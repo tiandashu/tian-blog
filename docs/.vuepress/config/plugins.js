@@ -1,12 +1,42 @@
+
 // 插件配置
 module.exports = [
   // 本地插件
-  // [require('./plugins/love-me'), { // 鼠标点击爱心特效
-  //   color: '#11a8cd', // 爱心颜色，默认随机色
-  //   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
-  // }],
+  ['../../../local-plugins/love-me', { // 鼠标点击爱心特效
+    color: '#11a8cd', // 爱心颜色，默认随机色
+    excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
+  }],
+
+  // 'vuepress-plugin-ppt',
+  ['../../../local-plugins/tian-ppt', {
+    selector: '.footer'
+  }],
 
   'vuepress-plugin-baidu-autopush', // 百度自动推送
+  [
+    'vuepress-plugin-helper-live2d', {
+      live2d: {
+        // 是否启用(关闭请设置为false)(default: true)
+        enable: true,
+        // 模型名称(default: hibiki)>>>取值请参考：
+        // https://github.com/JoeyBling/hexo-theme-yilia-plus/wiki/live2d%E6%A8%A1%E5%9E%8B%E5%8C%85%E5%B1%95%E7%A4%BA
+        model: 'hibiki',
+        display: {
+          position: "left", // 显示位置：left/right(default: 'right')
+          width: 135, // 模型的长度(default: 135)
+          height: 300, // 模型的高度(default: 300)
+          hOffset: 280, //  水平偏移(default: 65)
+          vOffset: 0, //  垂直偏移(default: 0)
+        },
+        mobile: {
+          show: false // 是否在移动设备上显示(default: false)
+        },
+        react: {
+          opacity: 0.8 // 模型透明度(default: 0.8)
+        }
+      }
+    }
+  ],
 
   // 可以添加第三方搜索链接的搜索框（原官方搜索框的参数仍可用）
   [
