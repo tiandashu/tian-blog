@@ -16,7 +16,7 @@
     />
     <div
       title="赞赏"
-      class="button blur theme-mode-but iconfont icon-zhuti"
+      class="button blur theme-mode-but iconfont icon-weixin"
       @mouseenter="showMonyBox = true"
       @mouseleave="showMonyBox = false"
       @click="showMonyBox = true"

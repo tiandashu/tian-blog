@@ -8,9 +8,9 @@ module.exports = [
   }],
 
   // 'vuepress-plugin-ppt',
-  ['../../../local-plugins/tian-ppt', {
-    selector: '.footer'
-  }],
+  // ['../../../local-plugins/tian-ppt', {
+  //   selector: '.footer'
+  // }],
 
   'vuepress-plugin-baidu-autopush', // 百度自动推送
   [
@@ -116,8 +116,8 @@ module.exports = [
         clientID: 'a6e1355287947096b88b',
         clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
         repo: 'blog-gitalk-comment', // GitHub 仓库
-        owner: 'xugaoyi', // GitHub仓库所有者
-        admin: ['xugaoyi'], // 对仓库有写权限的人
+        owner: 'tiandashu', // GitHub仓库所有者
+        admin: ['tiandashu'], // 对仓库有写权限的人
         // distractionFreeMode: true,
         pagerDirection: 'last', // 'first'正序 | 'last'倒序
         id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
