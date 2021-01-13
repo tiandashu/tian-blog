@@ -5,13 +5,13 @@
   "author": {
     "name": "gaoyi(Evan) Xu"
   },
-  "homepage": "https://github.com/tiandashu/vuepress-theme-vdoing#readme",
+  "homepage": "https://github.com/tiandashu/tian-blog#readme",
   "bugs": {
-    "url": "https://github.com/tiandashu/vuepress-theme-vdoing/issues"
+    "url": "https://github.com/tiandashu/tian-blog/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tiandashu/vuepress-theme-vdoing.git"
+    "url": "git+https://github.com/tiandashu/tian-blog.git"
   },
   "dependencies": {
     "@better-scroll/core": "^2.0.0-beta.6",
